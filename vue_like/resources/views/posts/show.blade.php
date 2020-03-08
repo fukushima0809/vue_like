@@ -15,6 +15,12 @@
                         @endif
 
                         {{$post->content}}
+
+                        <like
+                        :post-id='{{ json_encode($post->id) }}'
+                        >
+                        </like>
+
                 </div>
             </div>
         </div>
